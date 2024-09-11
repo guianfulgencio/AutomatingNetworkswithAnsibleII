@@ -1,0 +1,48 @@
+---
+
+  - name: PARSING SHOW COMMANDS
+    hosts: csr1
+    connection: network_cli
+
+    vars:
+      template_path: "/home/ntc/.local/lib/python3.10/site-packages/ntc_templates/templates/"
+      show_version_path: "{{ template_path }}cisco_ios_show_version.textfsm"
+      show_interface_path: "{{ template_path }}cisco_ios_show_interfaces.textfsm"
+
+    tasks:
+
+      - name: GET SHOW COMMANDS
+        ios_command:
+          commands:
+            - show version
+            - show interfaces
+        register: config_data
+
+      - name: PARSE CLI TextFSM SHOW INTERFACE
+        set_fact:
+          show_version: "{{ config_data.stdout[0] | parse_cli_textfsm(show_version_path) }}"
+          show_interface: "{{ config_data.stdout[1] | parse_cli_textfsm(show_interface_path) }}"
+
+      - name: DISPLAY PARSED DATA
+        debug:
+          var: "{{ item }}"
+        loop:
+          - show_interface
+          - show_version
+
+      - name: PARSING WITH REGEX_SEARCH
+        set_fact:
+          show_version_search: "{{ config_data.stdout[0] | regex_search('(\\d+\\.\\S+)') }}"
+
+      - name: DISPLAY REGEX_SEARCH FOR IOS VERSION
+        debug:
+          msg: "The device version is {{ show_version_search }}"
+
+      - name: PARSING WITH REGEX_FINDALL
+        set_fact:
+          show_interface_find_all: "{{ config_data.stdout[1] | regex_findall('Gig\\w+|Loopback\\w+') }}"
+
+      - name: DISPLAY REGEX_FINDALL
+        debug:
+          msg: " An interface on this device is {{ item }}"
+        loop: "{{ show_interface_find_all }}"

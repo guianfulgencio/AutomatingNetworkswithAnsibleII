@@ -1,0 +1,6 @@
+[iosxe]
+csr[1:3]
+
+[iosxe:vars]
+ansible_user=ntc
+ansible_password=ntc123

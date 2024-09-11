@@ -1,0 +1,12 @@
+{
+    "protocol": [
+        {
+            "value": "tcp",
+            "display": "TCP"
+        },
+        {
+            "value": "udp",
+            "display": "UDP"
+        }
+    ]
+}

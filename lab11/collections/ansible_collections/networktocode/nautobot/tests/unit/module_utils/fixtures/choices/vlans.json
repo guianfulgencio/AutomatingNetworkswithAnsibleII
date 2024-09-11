@@ -1,0 +1,16 @@
+{
+    "status": [
+        {
+            "value": "active",
+            "display": "Active"
+        },
+        {
+            "value": "reserved",
+            "display": "Reserved"
+        },
+        {
+            "value": "deprecated",
+            "display": "Deprecated"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+---
+collections:
+  - name: cisco.ios
+
+  - name: https://github.com/nautobot/nautobot-ansible
+    type: git
+    version: v2.0.0

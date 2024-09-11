@@ -1,0 +1,28 @@
+{
+    "status": [
+        {
+            "value": "planned",
+            "display": "Planned"
+        },
+        {
+            "value": "provisioning",
+            "display": "Provisioning"
+        },
+        {
+            "value": "active",
+            "display": "Active"
+        },
+        {
+            "value": "offline",
+            "display": "Offline"
+        },
+        {
+            "value": "deprovisioning",
+            "display": "Deprovisioning"
+        },
+        {
+            "value": "decommissioned",
+            "display": "Decommissioned"
+        }
+    ]
+}

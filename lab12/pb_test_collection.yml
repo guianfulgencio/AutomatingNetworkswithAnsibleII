@@ -1,0 +1,54 @@
+---
+
+- name: USING THE EXPAND RANGE FILTER
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - debug:
+        msg: "{{ 'GigabitEthernet1/[1:5]' | expand_range }}"
+
+
+- name: NXOS INTERFACES STATE VERIFICATION
+  hosts: nxos
+  gather_facts: false
+
+  vars:
+    interface_intent:
+      - name: Ethernet1/1
+        state: up
+      - name: Ethernet1/2
+        state: up
+      - name: Ethernet1/10
+        state: up
+      - name: Ethernet1/11
+        state: down
+
+  tasks:
+    - name: GET INTERFACE STATE FROM SWITCH
+      cisco.nxos.nxos_command:
+        commands: show int brief | json
+      register: show_int_brief
+
+    - name: COMPARE INTENT TO OPERATIONAL STATE
+      set_fact:
+        interface_pass_fail: "{{ show_int_brief.stdout.0 | verify_intended_state(interface_intent) }}"
+
+    - name: SHOW COMPARISON RESULTS
+      debug:
+        var: interface_pass_fail
+
+
+- name: TESTING THE IOSXE_REST_VRF MODULE
+  hosts: iosxe
+  gather_facts: false
+
+  tasks:
+    - name: UPDATE DESCRIPTION FOR CORP VRF
+      iosxe_rest_vrf:
+        host: "{{ inventory_hostname }}"
+        user: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+        name: CORP
+        description: VRF FOR CORPORATE USERS
+      delegate_to: localhost

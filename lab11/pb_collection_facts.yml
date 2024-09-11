@@ -1,0 +1,14 @@
+---
+
+- name: USING THE BUILTIN IOS_FACTS MODULE
+  hosts: iosxe
+  gather_facts: false
+  connection: ansible.netcommon.network_cli
+
+  tasks:
+    - name: GATHER IOS FACTS
+      cisco.ios.ios_facts:
+
+    - name: PRINT IOS VERSION
+      debug:
+        msg: "Version is {{ ansible_net_version }}"

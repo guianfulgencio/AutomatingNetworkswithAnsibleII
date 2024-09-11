@@ -1,0 +1,34 @@
+{
+ "collection_info": {
+  "namespace": "networktocode",
+  "name": "nautobot",
+  "version": "2.0.0",
+  "authors": [
+   "Network to Code <opensource@networktocode.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "dcim",
+   "system",
+   "ipam",
+   "networking",
+   "circuits"
+  ],
+  "description": "This is a collection of Nautobot Ansible modules",
+  "license": [],
+  "license_file": "LICENSE",
+  "dependencies": {},
+  "repository": "https://github.com/nautobot/nautobot-ansible",
+  "documentation": "https://nautobot-ansible.readthedocs.io/en/latest/",
+  "homepage": "https://nautobot-ansible.readthedocs.io/en/latest/",
+  "issues": "https://github.com/nautobot/nautobot-ansible/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "ce31214ee9b2c74e6ae03932460c414f7507ae79b37a96dfa86e3f8988a0494c",
+  "format": 1
+ },
+ "format": 1
+}

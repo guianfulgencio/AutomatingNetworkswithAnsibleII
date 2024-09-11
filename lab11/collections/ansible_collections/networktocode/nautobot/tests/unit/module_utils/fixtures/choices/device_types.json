@@ -1,0 +1,12 @@
+{
+    "subdevice_role": [
+        {
+            "value": "parent",
+            "display": "Parent"
+        },
+        {
+            "value": "child",
+            "display": "Child"
+        }
+    ]
+}

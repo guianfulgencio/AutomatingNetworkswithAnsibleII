@@ -1,0 +1,20 @@
+---
+
+- name: TEST CUSTOM MODULE WORKS
+  hosts: iosxe
+  connection: local
+  gather_facts: false
+
+  tasks:
+
+    - name: GATHER IOSXE CONFIGS
+      iosxe_gather_configs:
+        host: "{{ inventory_hostname }}"
+        user: "{{ username }}"
+        password: "{{ password }}"
+        filter: vrf
+      register: result
+
+    - name: VIEW THE DATA STORED IN RESULT
+      debug:
+        var: result

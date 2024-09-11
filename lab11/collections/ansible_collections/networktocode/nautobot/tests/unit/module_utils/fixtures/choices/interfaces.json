@@ -1,0 +1,306 @@
+{
+    "type": [
+        {
+            "value": "virtual",
+            "display": "Virtual"
+        },
+        {
+            "value": "lag",
+            "display": "Link Aggregation Group (LAG)"
+        },
+        {
+            "value": "100base-tx",
+            "display": "100BASE-TX (10/100ME)"
+        },
+        {
+            "value": "1000base-t",
+            "display": "1000BASE-T (1GE)"
+        },
+        {
+            "value": "2.5gbase-t",
+            "display": "2.5GBASE-T (2.5GE)"
+        },
+        {
+            "value": "5gbase-t",
+            "display": "5GBASE-T (5GE)"
+        },
+        {
+            "value": "10gbase-t",
+            "display": "10GBASE-T (10GE)"
+        },
+        {
+            "value": "10gbase-cx4",
+            "display": "10GBASE-CX4 (10GE)"
+        },
+        {
+            "value": "1000base-x-gbic",
+            "display": "GBIC (1GE)"
+        },
+        {
+            "value": "1000base-x-sfp",
+            "display": "SFP (1GE)"
+        },
+        {
+            "value": "10gbase-x-sfpp",
+            "display": "SFP+ (10GE)"
+        },
+        {
+            "value": "10gbase-x-xfp",
+            "display": "XFP (10GE)"
+        },
+        {
+            "value": "10gbase-x-xenpak",
+            "display": "XENPAK (10GE)"
+        },
+        {
+            "value": "10gbase-x-x2",
+            "display": "X2 (10GE)"
+        },
+        {
+            "value": "25gbase-x-sfp28",
+            "display": "SFP28 (25GE)"
+        },
+        {
+            "value": "40gbase-x-qsfpp",
+            "display": "QSFP+ (40GE)"
+        },
+        {
+            "value": "50gbase-x-sfp28",
+            "display": "QSFP28 (50GE)"
+        },
+        {
+            "value": "100gbase-x-cfp",
+            "display": "CFP (100GE)"
+        },
+        {
+            "value": "100gbase-x-cfp2",
+            "display": "CFP2 (100GE)"
+        },
+        {
+            "value": "200gbase-x-cfp2",
+            "display": "CFP2 (200GE)"
+        },
+        {
+            "value": "100gbase-x-cfp4",
+            "display": "CFP4 (100GE)"
+        },
+        {
+            "value": "100gbase-x-cpak",
+            "display": "Cisco CPAK (100GE)"
+        },
+        {
+            "value": "100gbase-x-qsfp28",
+            "display": "QSFP28 (100GE)"
+        },
+        {
+            "value": "200gbase-x-qsfp56",
+            "display": "QSFP56 (200GE)"
+        },
+        {
+            "value": "400gbase-x-qsfpdd",
+            "display": "QSFP-DD (400GE)"
+        },
+        {
+            "value": "400gbase-x-osfp",
+            "display": "OSFP (400GE)"
+        },
+        {
+            "value": "ieee802.11a",
+            "display": "IEEE 802.11a"
+        },
+        {
+            "value": "ieee802.11g",
+            "display": "IEEE 802.11b/g"
+        },
+        {
+            "value": "ieee802.11n",
+            "display": "IEEE 802.11n"
+        },
+        {
+            "value": "ieee802.11ac",
+            "display": "IEEE 802.11ac"
+        },
+        {
+            "value": "ieee802.11ad",
+            "display": "IEEE 802.11ad"
+        },
+        {
+            "value": "ieee802.11ax",
+            "display": "IEEE 802.11ax"
+        },
+        {
+            "value": "gsm",
+            "display": "GSM"
+        },
+        {
+            "value": "cdma",
+            "display": "CDMA"
+        },
+        {
+            "value": "lte",
+            "display": "LTE"
+        },
+        {
+            "value": "sonet-oc3",
+            "display": "OC-3/STM-1"
+        },
+        {
+            "value": "sonet-oc12",
+            "display": "OC-12/STM-4"
+        },
+        {
+            "value": "sonet-oc48",
+            "display": "OC-48/STM-16"
+        },
+        {
+            "value": "sonet-oc192",
+            "display": "OC-192/STM-64"
+        },
+        {
+            "value": "sonet-oc768",
+            "display": "OC-768/STM-256"
+        },
+        {
+            "value": "sonet-oc1920",
+            "display": "OC-1920/STM-640"
+        },
+        {
+            "value": "sonet-oc3840",
+            "display": "OC-3840/STM-1234"
+        },
+        {
+            "value": "1gfc-sfp",
+            "display": "SFP (1GFC)"
+        },
+        {
+            "value": "2gfc-sfp",
+            "display": "SFP (2GFC)"
+        },
+        {
+            "value": "4gfc-sfp",
+            "display": "SFP (4GFC)"
+        },
+        {
+            "value": "8gfc-sfpp",
+            "display": "SFP+ (8GFC)"
+        },
+        {
+            "value": "16gfc-sfpp",
+            "display": "SFP+ (16GFC)"
+        },
+        {
+            "value": "32gfc-sfp28",
+            "display": "SFP28 (32GFC)"
+        },
+        {
+            "value": "128gfc-sfp28",
+            "display": "QSFP28 (128GFC)"
+        },
+        {
+            "value": "inifiband-sdr",
+            "display": "SDR (2 Gbps)"
+        },
+        {
+            "value": "inifiband-ddr",
+            "display": "DDR (4 Gbps)"
+        },
+        {
+            "value": "inifiband-qdr",
+            "display": "QDR (8 Gbps)"
+        },
+        {
+            "value": "inifiband-fdr10",
+            "display": "FDR10 (10 Gbps)"
+        },
+        {
+            "value": "inifiband-fdr",
+            "display": "FDR (13.5 Gbps)"
+        },
+        {
+            "value": "inifiband-edr",
+            "display": "EDR (25 Gbps)"
+        },
+        {
+            "value": "inifiband-hdr",
+            "display": "HDR (50 Gbps)"
+        },
+        {
+            "value": "inifiband-ndr",
+            "display": "NDR (100 Gbps)"
+        },
+        {
+            "value": "inifiband-xdr",
+            "display": "XDR (250 Gbps)"
+        },
+        {
+            "value": "t1",
+            "display": "T1 (1.544 Mbps)"
+        },
+        {
+            "value": "e1",
+            "display": "E1 (2.048 Mbps)"
+        },
+        {
+            "value": "t3",
+            "display": "T3 (45 Mbps)"
+        },
+        {
+            "value": "e3",
+            "display": "E3 (34 Mbps)"
+        },
+        {
+            "value": "cisco-stackwise",
+            "display": "Cisco StackWise"
+        },
+        {
+            "value": "cisco-stackwise-plus",
+            "display": "Cisco StackWise Plus"
+        },
+        {
+            "value": "cisco-flexstack",
+            "display": "Cisco FlexStack"
+        },
+        {
+            "value": "cisco-flexstack-plus",
+            "display": "Cisco FlexStack Plus"
+        },
+        {
+            "value": "juniper-vcp",
+            "display": "Juniper VCP"
+        },
+        {
+            "value": "extreme-summitstack",
+            "display": "Extreme SummitStack"
+        },
+        {
+            "value": "extreme-summitstack-128",
+            "display": "Extreme SummitStack-128"
+        },
+        {
+            "value": "extreme-summitstack-256",
+            "display": "Extreme SummitStack-256"
+        },
+        {
+            "value": "extreme-summitstack-512",
+            "display": "Extreme SummitStack-512"
+        },
+        {
+            "value": "other",
+            "display": "Other"
+        }
+    ],
+    "mode": [
+        {
+            "value": "access",
+            "display": "Access"
+        },
+        {
+            "value": "tagged",
+            "display": "Tagged"
+        },
+        {
+            "value": "tagged-all",
+            "display": "Tagged (All)"
+        }
+    ]
+}

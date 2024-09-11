@@ -1,0 +1,4 @@
+{% for name in interface_range | expand_range %}
+interface {{ name }}
+ shutdown
+{% endfor %}

@@ -1,0 +1,12 @@
+---
+
+- name: USING THE EXPAND RANGE FILTER
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - debug:
+        msg: "{{ 'GigabitEthernet1/[1:5]' | expand_range }}"
+
+    - debug:
+        msg: "{{ 'GigabitEthernet100' | expand_range }}"

@@ -1,0 +1,16 @@
+{
+    "status": [
+        {
+            "value": "active",
+            "display": "Active"
+        },
+        {
+            "value": "offline",
+            "display": "Offline"
+        },
+        {
+            "value": "staged",
+            "display": "Staged"
+        }
+    ]
+}

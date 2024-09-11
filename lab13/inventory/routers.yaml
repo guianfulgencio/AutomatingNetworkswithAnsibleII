@@ -1,0 +1,14 @@
+---
+all:
+  vars:
+    ansible_user: ntc
+    ansible_password: ntc123
+  children:
+    iosxe:
+      hosts:
+        csr1:
+        csr2:
+        csr3:
+      vars:
+        ansible_connection: network_cli
+        ansible_network_os: ios

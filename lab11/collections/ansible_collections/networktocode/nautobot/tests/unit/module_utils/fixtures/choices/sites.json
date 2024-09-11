@@ -1,0 +1,16 @@
+{
+    "status": [
+        {
+            "value": "active",
+            "display": "Active"
+        },
+        {
+            "value": "planned",
+            "display": "Planned"
+        },
+        {
+            "value": "retired",
+            "display": "Retired"
+        }
+    ]
+}

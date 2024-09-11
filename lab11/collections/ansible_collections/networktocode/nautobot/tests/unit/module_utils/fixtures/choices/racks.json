@@ -1,0 +1,66 @@
+{
+    "status": [
+        {
+            "value": "reserved",
+            "display": "Reserved"
+        },
+        {
+            "value": "available",
+            "display": "Available"
+        },
+        {
+            "value": "planned",
+            "display": "Planned"
+        },
+        {
+            "value": "active",
+            "display": "Active"
+        },
+        {
+            "value": "deprecated",
+            "display": "Deprecated"
+        }
+    ],
+    "type": [
+        {
+            "value": "2-post-frame",
+            "display": "2-post frame"
+        },
+        {
+            "value": "4-post-frame",
+            "display": "4-post frame"
+        },
+        {
+            "value": "4-post-cabinet",
+            "display": "4-post cabinet"
+        },
+        {
+            "value": "wall-frame",
+            "display": "Wall-mounted frame"
+        },
+        {
+            "value": "wall-cabinet",
+            "display": "Wall-mounted cabinet"
+        }
+    ],
+    "width": [
+        {
+            "value": 19,
+            "display": "19 inches"
+        },
+        {
+            "value": 23,
+            "display": "23 inches"
+        }
+    ],
+    "outer_unit": [
+        {
+            "value": "mm",
+            "display": "Millimeters"
+        },
+        {
+            "value": "in",
+            "display": "Inches"
+        }
+    ]
+}

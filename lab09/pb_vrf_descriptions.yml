@@ -1,0 +1,15 @@
+---
+
+- name: TESTING THE IOSXE_REST_VRF MODULE
+  hosts: iosxe
+  gather_facts: false
+
+  tasks:
+    - name: UPDATE DESCRIPTION FOR CORP VRF
+      iosxe_rest_vrf:
+        host: "{{ inventory_hostname }}"
+        user: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+        name: CORP
+        description: VRF FOR CORPORATE USERS
+      delegate_to: localhost

@@ -1,0 +1,20 @@
+---
+
+- name: TEST INTERFACE EXPANSION FILTER
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - debug:
+        msg: "{{ 'gi' | expand_interface_name }}"
+
+    - debug:
+        msg: "{{ 'loop' | expand_interface_name }}"
+
+    - debug:
+        msg: "{{ 'TUN' | expand_interface_name }}"
+
+    - debug:
+        msg: "{{ 'po100' | expand_interface_name }}"
+
+    - debug:
+        msg: "{{ 'virt' | expand_interface_name }}"

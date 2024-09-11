@@ -1,0 +1,14 @@
+---
+
+- name: TESTING THE IOSXE_REST_VRF MODULE
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: UPDATE DESCRIPTION FOR CORP VRF
+      iosxe_rest_vrf:
+        host: csr1
+        user: ntc
+        password: ntc123
+        name: CORP
+        description: VRF FOR CORPORATE USERS

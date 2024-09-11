@@ -1,0 +1,21 @@
+---
+
+- name: USING FILTERS IN TEMPLATES
+  hosts: csr3
+  gather_facts: false
+
+  vars:
+    interface_range: GigabitEthernet[2:4]
+
+  tasks:
+    - debug:
+        msg: "{{ interface_range | expand_range }}"
+
+    - name: GENERATE CONFIG TO SHUTDOWN INTERFACES
+      template:
+        src: range_shutdown.j2
+        dest: range_shutdown.cfg
+
+    - name: APPLY RANGE SHUTDOWN TO DEVICE DIRECTLY
+      ios_config:
+        src: range_shutdown.j2
